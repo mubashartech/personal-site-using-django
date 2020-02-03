@@ -1,0 +1,15 @@
+{% extends 'home/base.html' %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>blog-detail</title>
+  </head>
+  <body>
+    {%block content%}
+    <h1>{{post.title}}</h1>
+    <p>{{post.content}}</p>
+    by {{post.author}}
+    at {{post.date}}
+    {% endblock %}
+  </body>
+</html>
